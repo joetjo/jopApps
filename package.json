@@ -1,0 +1,19 @@
+{
+  "name": "jop-testapp",
+  "version": "0.0.1wip",
+  "description": "Let's try electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "http://joetjo.free-h.net/",
+  "keywords": [
+    "Electron",
+    "Joetjo Production"
+  ],
+  "author": "Joetjo Production",
+  "license": "To be defined",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
