@@ -3,42 +3,29 @@ Ctrl - shift - P to start the command palette (kind of spotlight to run action)
 Action from plugins are prefixed by plugin name.
 and can be associated to key bindings.
 
-## Core plugin comment
-(Discover it from package menu)
-To be completed ( based on atom version 1.22.0 )
+# from recommendation
+https://www.alsacreations.com/outils/lire/1744-editeur-code-source-atom-io.html
 
-## node-debugger (initial test v ... )
-not tested yet
-
-## git plugins
-often need external git command launching with visual side effect (see plugin page).
-Check that git is in windows path (open cmd and run git --version, that must answer)
-
-Like for any usage of git, Make sure your gitconfig file is configured. You must configure at least the **user.email** and **user.name** variables.
-
-Take care also that the open project folder must be the root folder (where the .git is) or plugins will not operate.
-
-### git-plus (initial test v 7.10.0)
-https://atom.io/packages/git-plus
-add some convenient shortcuts in atom GUI (bottom right by default to get access)
-Needed to have q quick way to fetch / pull / ... most commons git command integrated in UI.
-but there is a lot of commands using key bindings (to memorize :-/)
-+ command menu in packages
-
-maybe confusing with what is integrated in core atom package and this addon.
-
-### git-log (initial test v 0.4.1)
-https://atom.io/packages/git-log
-display the commit graph (avoid launching external git tool but no added value from external git tool)
-recommended if next plugin is installed (git-time-machine: was at least recommended for version 1.5.9)
-
-### git-time-machine
-https://atom.io/packages/git-time-machine
-Alt T to switch the panel but I don't see it working yet...
-
-### git-status (initial test v 0.3.4)
-https://atom.io/packages/git-status
-add a panel for git status: when panel is visible, all file currently in edition are shown in the status panel.
-Not usable for big change but can be toggle on/off.
-
-### TODO : many other git plugins seems valuable.
+- pigments : affiche les couleurs directement dans les fichiers
+- editorconfig : prend en compte le fichier de configuration .editorconfig dans un projet (pour définir les espaces/tabulations par défaut par exemple)
+- minimap : carte d'aperçu du fichier
+- project-manager : pour passer rapidement d'un projet à l'autre
+- highlight-selected + minimap-highlight-selected : met en surbrillance dans tout le fichier le mot actuellement sélectionné
+- file-icons : de jolies icônes de fichiers dans la sidebar
+- autocomplete-paths : autocomplétion des chemins de fichiers
+- gulp-control : lance les tâches Gulp d'un projet sans avoir à chercher la console
+- beautify : beautifier (belle indentation) tout type de code
+- linter : pour tout linter ! (vérification de syntaxe js, php, css, sass, less, html…), doit être complété par d'autres modules indépendants, par exemple
+- linter-jshint/linter-eshint pour JavaScript ou linter-php pour PHP
+- color-picker : comme son nom l’indique une palette de couleurs (raccourci clavier ou clic contextuel)
+- autoclose-html : fermeture des balises automatique lors de la frappe
+- docblockr : formate des blocs de documentation automatiquement
+- less-than-slash : fermer automatiquement les balises
+- emmet : transforme les expressions de sélecteurs CSS en balises HTML
+- prettier pour JavaScript : formate (beautify) correctement
+- git-history : historique du fichier avec Git,
+- git-time-machine : historique Git visuel
+- clipboard-plus : copier-coller avec historique multiple
+- markdown-pdf : générer un fichier PDF à partir d'un document markdown
+- tool-bar et tool-bar-atom : ajoute une barre d'outils courants
+- split-diff : comparer des fichiers visuellement avec couleurs, y compris depuis git

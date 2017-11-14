@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>joApps skeleton</title>
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+
+  <script src="./lib/jquery-3.2.1.js"></script>
+  <script src="./logging/logging.js" charset="utf-8"></script>
+  <script src="./module1/module1.js" charset="utf-8"></script>
+  <script src="./module2/module2.js" charset="utf-8"></script>
+  <script src="./mainWindow.js" charset="utf-8"></script>
+
+</head>
+
+<body">
+
+  A javascript app without structural framework (rely on electron currenlty - nodejs )
+
+  <h3 class="todo">Test current scope behavior</h3>
+  <textarea rows="2" id="repo-input" class="toto" placeholder="Enter git folder path..."></textarea>
+
+  <p>No data access included in HTML part, dynamic behavior has to be set in associated javascript file.</p>
+
+  <h3 class="todo">About module 1</h3>
+  <textarea rows="6" cols="50" id="info-module-1" class="toto"></textarea>
+
+  <p>All code is done in small package with independent scope using a Object like mechanism and that must provide an about method with name, version, description and dependencies (example with module 2)</p>
+
+  <h3 class="todo">About module 2</h3>
+  <textarea rows="9" cols="50" id="info-module-2" class="toto"></textarea>
+
+<br><hr>
+  <textarea rows="2" id="status-info" class="toto"></textarea>
+
+</body>
+
+</html>
