@@ -16,12 +16,12 @@ function createWindow () {
     // Create the browser window.
     mainWindow = new BrowserWindow({
       // Set the initial width to 800px
-      width: 1200,
+      width: 1500,
       // Set the initial height to 600px
       height: 800,
       // Set the default background color of the window to match the CSS
       // background color of the page, this prevents any white flickering
-      backgroundColor: "#D6D8DC",
+      backgroundColor: "white", // "#D6D8DC",
       // Don't show the window until it's ready, this prevents any white flickering
       show: false
     })

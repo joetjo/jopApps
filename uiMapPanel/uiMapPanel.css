@@ -1,0 +1,68 @@
+
+.hideMapPanel {
+    display: none !important;
+}
+
+div.mapUiMapPanel {
+    position: fixed;
+}
+
+div.mapUiMapPanel > ul {
+    margin: 0;
+    padding: 0;
+}
+
+div#Menu, div.mapUiMapPanel {
+    position: absolute;
+    width: 11em;
+    height: auto;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: auto;
+    background: #DDB url(dogsear.png) bottom right no-repeat;
+}
+
+div.mapUiMapPanel::before {
+    content: "Local links";
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.1em 0.5em;
+    color: #999;
+    font-size: larger;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 0.25em;
+}
+
+div#Menu p.navhead, div#Menu a, div.mapUiMapPanel p, div.mapUiMapPanel li, div.mapUiMapPanel h2 {
+    display: block;
+    font-size: medium;
+    margin: 0.55em 1.63em 0.44em -0.9em;
+    padding: 0.38em 1em;
+    text-indent: 0;
+    text-align: left;
+    background: #aa7 url(sandydogsear.png) bottom right no-repeat;
+    color: white;
+    border-bottom: none;
+    list-style: none;
+}
+
+div#Menu p.navhead, div#Menu a, div.mapUiMapPanel p, div.mapUiMapPanel li, div.mapUiMapPanel h2 {
+    display: block;
+    font-size: small;
+    margin: 0.55em 1.63em 0.44em -0.9em;
+    padding: 0.38em 1em;
+    text-indent: 0;
+    text-align: left;
+    background: #aa7 url(sandydogsear.png) bottom right no-repeat;
+    color: white;
+    border-bottom: none;
+    list-style: none;
+}
+
+div#Menu a:link, div#Menu a:visited, div.mapUiMapPanel a:link, div.mapUiMapPanel a:visited {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}

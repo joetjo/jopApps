@@ -6,20 +6,43 @@
 
   <title>joApps skeleton</title>
 
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="uiMapPanel/uiMapPanel.css">
+
   <!-- Scripts -->
   <script>
     delete module.exports
   </script>
 
   <script src="./lib/jquery-3.2.1.js"></script>
-  <script src="./logging/logging.js" charset="utf-8"></script>
-  <script src="./module1/module1.js" charset="utf-8"></script>
-  <script src="./module2/module2.js" charset="utf-8"></script>
+  <script src="./fondation.js" charset="utf-8"></script>
+
+  <script>
+  JopModules = [ "logging", // ALWAYS KEEP LOGGING 1st ! (used in callback below !)
+                 "module1",
+                 "module2"
+  ]
+
+  for(var i in JopModules)
+  {
+    $.loadScript('./' + JopModules[i] + '/' + JopModules[i] + '.js', function(){});
+  }
+  </script>
+
   <script src="./mainWindow.js" charset="utf-8"></script>
 
 </head>
 
 <body">
+
+<div class="mapUiMapPanel">
+   <h2 class="hideMapPanel">Contents</h2>
+
+   <ul>
+    <li id="link1"><a href="#HTML">Un truc par la</a></li>
+    <li id="link2"><a href="#colors">Un autre par ici</a></li>
+ </ul>
+</div>
 
   A javascript app without structural framework (rely on electron currenlty - nodejs )
 
